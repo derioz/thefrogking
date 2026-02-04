@@ -1,7 +1,11 @@
 import { Game, Clip, SocialLink, NavItem } from './types';
 
-// The Hero Image - Full quality from public folder (Vite serves from root)
-export const HERO_IMAGE_URL = "/hero-bg.jpg";
+// Base URL for GitHub Pages - all asset paths must include this
+export const BASE_URL = '/thefrogking';
+
+// The Hero Image - Full quality from public folder
+export const HERO_IMAGE_URL = `${BASE_URL}/hero-bg.jpg`;
+export const LOGO_URL = `${BASE_URL}/logo.png`;
 
 export const GAMES: Game[] = [
   {

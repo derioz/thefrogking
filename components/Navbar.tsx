@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Home, Gamepad2, Film, ScrollText, Crown, Cpu, Users, Twitch } from 'lucide-react';
+import { LOGO_URL } from '../constants';
 
 const NAV_ITEMS = [
   { label: 'Home', href: '#hero', icon: Home },
@@ -52,7 +53,7 @@ export const Navbar: React.FC = () => {
           onMouseEnter={() => setHoveredItem('logo')}
           onMouseLeave={() => setHoveredItem(null)}
         >
-          <img src="/logo.png" alt="Logo" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform" />
+          <img src={LOGO_URL} alt="Logo" className="w-10 h-10 object-contain group-hover:scale-110 transition-transform" />
 
           {/* Logo tooltip */}
           <div className={`absolute left-full ml-4 top-1/2 -translate-y-1/2 px-3 py-2 bg-cave border border-neon-green/30 rounded-lg whitespace-nowrap transition-all duration-300 ${hoveredItem === 'logo' ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2 pointer-events-none'
@@ -77,8 +78,8 @@ export const Navbar: React.FC = () => {
               >
                 {/* Button */}
                 <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 ${active
-                    ? 'bg-neon-green/20 text-neon-green shadow-[0_0_20px_rgba(57,255,20,0.2)]'
-                    : 'text-white/40 hover:text-white hover:bg-white/5'
+                  ? 'bg-neon-green/20 text-neon-green shadow-[0_0_20px_rgba(57,255,20,0.2)]'
+                  : 'text-white/40 hover:text-white hover:bg-white/5'
                   }`}>
                   <Icon size={20} />
                 </div>

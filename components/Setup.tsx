@@ -1,13 +1,14 @@
 import React from 'react';
 import { Zap } from 'lucide-react';
+import { BASE_URL } from '../constants';
 
 const SPECS = [
-    { label: 'GPU', value: 'RTX 4070 Super', brand: 'NVIDIA', image: '/specs/gpu.png', color: '#76B900' },
-    { label: 'CPU', value: 'Ryzen 7 9800X3D', brand: 'AMD', image: '/specs/cpu.png', color: '#ED1C24' },
-    { label: 'Mouse', value: 'Viper V2 Pro', brand: 'RAZER', image: '/specs/mouse.png', color: '#44D62C' },
-    { label: 'Keyboard', value: 'BlackWidow V4 75%', brand: 'RAZER', image: '/specs/keyboard.png', color: '#44D62C' },
-    { label: 'Headset', value: 'BlackShark V2 Pro', brand: 'RAZER', image: '/specs/headset.png', color: '#44D62C' },
-    { label: 'Mic', value: 'Wave:3', brand: 'ELGATO', image: '/specs/mic.png', color: '#1A9FFF' },
+    { label: 'GPU', value: 'RTX 4070 Super', brand: 'NVIDIA', image: `${BASE_URL}/specs/gpu.png`, color: '#76B900' },
+    { label: 'CPU', value: 'Ryzen 7 9800X3D', brand: 'AMD', image: `${BASE_URL}/specs/cpu.png`, color: '#ED1C24' },
+    { label: 'Mouse', value: 'Viper V2 Pro', brand: 'RAZER', image: `${BASE_URL}/specs/mouse.png`, color: '#44D62C' },
+    { label: 'Keyboard', value: 'BlackWidow V4 75%', brand: 'RAZER', image: `${BASE_URL}/specs/keyboard.png`, color: '#44D62C' },
+    { label: 'Headset', value: 'BlackShark V2 Pro', brand: 'RAZER', image: `${BASE_URL}/specs/headset.png`, color: '#44D62C' },
+    { label: 'Mic', value: 'Wave:3', brand: 'ELGATO', image: `${BASE_URL}/specs/mic.png`, color: '#1A9FFF' },
 ];
 
 export const Setup: React.FC = () => {

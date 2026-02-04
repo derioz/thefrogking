@@ -1,6 +1,6 @@
 import React from 'react';
 import { Twitch, ChevronDown } from 'lucide-react';
-import { HERO_IMAGE_URL } from '../constants';
+import { HERO_IMAGE_URL, LOGO_URL } from '../constants';
 
 interface HeroProps {
   isLive: boolean;
@@ -64,7 +64,7 @@ export const Hero: React.FC<HeroProps> = ({ isLive, isLoading, channel }) => {
 
         {/* Logo */}
         <img
-          src="/logo.png"
+          src={LOGO_URL}
           alt="The Frog King"
           className="w-48 md:w-64 lg:w-72 h-auto mx-auto mb-6 drop-shadow-2xl"
         />
